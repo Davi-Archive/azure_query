@@ -1,15 +1,6 @@
-BEGIN TRANSACTION
-
 SELECT
-Distinct Nome
+TOP(1)*
 FROM
 Forma_Pagamento
-
-
-COMMIT
---ROLLBACK
-
-SELECT
-*
-FROM
-Forma_Pagamento;
+ORDER BY 
+Codigo DESC
